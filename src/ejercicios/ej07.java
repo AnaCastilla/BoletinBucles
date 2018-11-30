@@ -8,11 +8,8 @@ public class ej07 {
 
 		/*
 		 * 1. Pedir 2 números 
-		 * 2. Crear un bucle que recorra desde n1 hasta n2. Por cada repetición del bucle
-		 * se va guardando en una variable, dependiendo de si es par o impar, dicho número más
-		 * n1 + 1 debido al incremento al repetirse el bucle 
-		 * 3. Mostrar la suma de los pares e impares
-		 * 
+		 * 2. Calcular la suma de los pares e impares comprendidos entre los números introducidos
+		 * 3. Mostrar los resultados
 		 */
 
 		int n1, n2, pairSum = 0, impairSum = 0;
@@ -30,10 +27,7 @@ public class ej07 {
 
 		} while (n1 > n2);
 
-		/* 2. Crear un bucle que recorra desde n1 hasta n2. Por cada repetición del bucle
-		 * se va guardando en una variable, dependiendo de si es par o impar, dicho número más
-		 * n1 + 1 debido al incremento al repetirse el bucle 
-		 */ 
+		//2. Calcular la suma de los pares e impares comprendidos entre los números introducidos
 		while (n1 <= n2) {
 			if (n1 % 2 == 0) {
 				System.out.println(n1);
@@ -44,7 +38,7 @@ public class ej07 {
 			}
 			n1++;
 		}
-		//3. Mostrar la suma de los pares e impares
+		//3. Mostrar los resultados
 		System.out.println("Suma de los pares: " + pairSum);
 		System.out.println("Suma de los impares: " + impairSum);
 	

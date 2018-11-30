@@ -10,8 +10,10 @@ public class ej09 {
 		
 		Scanner keyboard = new Scanner(System.in);
 		
+		//1. Introducir una base
 		System.out.print("Introduce la base de la potencia: ");
 		x = keyboard.nextInt();
+		//2. Introducir una potencia
 		System.out.print("Introduce el exponente: ");
 		n = keyboard.nextInt();
 		
@@ -20,7 +22,7 @@ public class ej09 {
 		for (i = 1; i <= n; i++) {
 			solution *= x;
 		}
-		
+		//3. Se muestra el resultado
 		System.out.println(x + " ^ " + n + " = " + solution);
 	}
 

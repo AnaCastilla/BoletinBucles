@@ -9,6 +9,7 @@ public class ej11 {
 		/*
 		 * 1. Pedir un número 
 		 * 2. Calcular la suma de los números de 1 en 1 hasta que exceda el valor de m
+		 * 3. Mostrar el resultado
 		 */
 
 		int m, i = 1, sum = 0;
@@ -33,6 +34,7 @@ public class ej11 {
 
 			i++;
 		}
+		//3. Mostrar el resultado
 		System.out.print("= " + sum);
 
 	}
