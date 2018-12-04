@@ -11,7 +11,7 @@ public class ej02 {
 		 * 2. Calcular el producto de ambos usando sumas
 		 */
 
-		int num1, num2, product = 0, i = 1;
+		int num1, num2;
 
 		Scanner keyboard = new Scanner(System.in);
 
@@ -22,17 +22,20 @@ public class ej02 {
 			num2 = keyboard.nextInt();
 		} while (num1 < 0 || num2 < 0);
 		
-		keyboard.close();
+		System.out.println(sumProduct(num1, num2));
 		
-		//2. Calcular el producto de ambos usando sumas
+		keyboard.close();
+			
+	}
+	
+	//2. Calcular el producto de ambos usando sumas
+	public static int sumProduct(int num1, int num2) {
+		int product = 0, i = 1;
 		while (i <= num2) {
 			product += num1;
-			System.out.println(product);
 			i++;
 		}
-		
-		
-		
+		return product;
 	}
 
 }

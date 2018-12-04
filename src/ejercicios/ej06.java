@@ -32,21 +32,13 @@ public class ej06 {
 
 			// 3. Se muestra el resultado de la operación elegida
 			if (elec1 == SUM) {
-				operation = n1 + n2;
-				System.out.println(n1 + " + " + n2 + " = " + operation);
+				System.out.println(n1 + " + " + n2 + " = " + sum(n1, n2));
 			} else if (elec1 == SUBTRACT) {
-				operation = n1 - n2;
-				System.out.println(n1 + " - " + n2 + " = " + operation);
+				System.out.println(n1 + " - " + n2 + " = " + subtract(n1, n2));
 			} else if (elec1 == MULTIPLY) {
-				operation = n1 * n2;
-				System.out.println(n1 + " * " + n2 + " = " + operation);
+				System.out.println(n1 + " * " + n2 + " = " + multiply(n1, n2));
 			} else if (elec1 == DIVIDE) {
-				if (n2 == 0) {
-					System.out.println("Infinito");
-				} else {
-					operation = n1 / n2;
-					System.out.println(n1 + " / " + n2 + " = " + operation);
-				}
+				System.out.println(n1 + " / " + n2 + " = " + divide(n1, n2));
 			} else {
 				System.out.println("Opción incorrecta");
 			}
@@ -62,6 +54,42 @@ public class ej06 {
 		} while (elec2 == YES);
 
 		keyboard.close();
+	}
+	
+	public static int sum(int n1, int n2) {
+		int operation;
+		
+		operation = n1 + n2;
+		
+		return operation;
+	}
+	
+	public static int subtract(int n1, int n2) {
+		int operation;
+		
+		operation = n1 - n2;
+		
+		return operation;
+	}
+	
+	public static int multiply(int n1, int n2) {
+		int operation; 
+		
+		operation = n1 * n2;
+		
+		return operation;
+	}
+	
+	public static int divide(int n1, int n2) {
+		int operation = 0;
+		
+		if (n2 == 0) {
+			System.out.println("Infinito");
+		} else {
+			operation = n1 / n2;
+		}
+		
+		return operation;
 	}
 
 }

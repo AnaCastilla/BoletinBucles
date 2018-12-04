@@ -6,7 +6,7 @@ public class ej09 {
 
 	public static void main(String[] args) {
 
-		int x, n, i, solution = 1;
+		int x, n;
 		
 		Scanner keyboard = new Scanner(System.in);
 		
@@ -19,11 +19,17 @@ public class ej09 {
 		
 		keyboard.close();
 		
+		//3. Se muestra el resultado
+		System.out.println(x + " ^ " + n + " = " + baseExponent(x, n));
+	}
+	
+	public static int baseExponent(int x, int n) {
+		int i, solution = 1;
 		for (i = 1; i <= n; i++) {
 			solution *= x;
 		}
-		//3. Se muestra el resultado
-		System.out.println(x + " ^ " + n + " = " + solution);
+		
+		return solution;
 	}
 
 }
